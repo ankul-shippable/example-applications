@@ -1,0 +1,7 @@
+require 'cucumber/rake/task'
+require 'ci/reporter/rake/cucumber'
+
+Cucumber::Rake::Task.new(:features)
+task :features => 'ci:setup:cucumber'
+
+task :default => :features
