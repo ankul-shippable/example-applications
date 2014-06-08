@@ -1,0 +1,7 @@
+require 'rake/testtask'
+require 'ci/reporter/rake/minitest'
+
+Rake::TestTask.new
+task :test => 'ci:setup:minitest'
+
+task :default => :test
