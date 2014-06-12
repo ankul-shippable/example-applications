@@ -1,0 +1,6 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem "rake"
+gem "spinach"
+gem "ci_reporter_spinach"
